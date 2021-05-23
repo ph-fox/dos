@@ -1,4 +1,4 @@
-  #!/usr/bin/python3
+#!/usr/bin/python3
 import requests, threading, os, readline, optparse
 from colorama import Fore
 
