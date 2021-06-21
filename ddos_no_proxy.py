@@ -11,7 +11,7 @@ if url is None:
  print("github: https://github.com/abalesluke")
  print("Note: i am no longer responsible for any misuse of this tool!.")
  print("\nTip: before executing this code you can also use -u flag\neg.[python3 reqflood.py -u <url>]")
- print("You must Use vpn when using this!, cuz this version doesnt use proxy\n"
+ print("You must Use vpn when using this!, cuz this version doesnt use proxy\n")
  url = input('Enter url: ')
 else:
  pass
