@@ -7,5 +7,5 @@ use this tool in your own risk!
 i am no longer responsible for any misuse of this tool.
 
 # Note!
- `ddos.py` uses proxy which in http_proxy.txt and `ddos_no_proxy.py` doesnt use proxy which you need vpn
-if you want to use `ddos.py` and take much time to start/load/attack, try changing or gather your own proxylist and paste it in `http_proxy.txt`
+ `ddos.py` uses proxy which in http_proxies.txt and `ddos_no_proxy.py` doesnt use proxy which you need vpn
+if you want to use `ddos.py` and take much time to start/load/attack, try changing or gather your own proxylist and paste it in `http_proxies.txt`
