@@ -10,7 +10,7 @@ if url is None:
  print("Coded by: Anikin Luke Abales")
  print("github: https://github.com/abalesluke")
  print("Note: i am no longer responsible for any misuse of this tool!.")
- print(f"\nTip: before executing this code you can also use -u flag\neg.[python3 {os.path.basename()} -u <url>]\n")
+ print(f"\nTip: before executing this code you can also use -u flag\neg.[python3 {__file__} -u <url>]\n")
  url = input('Enter url: ')
 else:
  pass
