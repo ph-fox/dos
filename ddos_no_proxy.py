@@ -39,3 +39,5 @@ while True:
   threads.append(x)
  for i in range(100):
   threads[i].start()
+ for i in range(100):
+  threads[i].join()
